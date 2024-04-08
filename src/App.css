@@ -1,91 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 .custom-navbar {
-  background-color: #4267B2; /* Facebook blue */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px; /* Increased vertical padding */
+	background-color: #4267b2; /* Facebook blue */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px; /* Increased vertical padding */
 }
 
 .navbar-header {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-  align-items: center;
-  width: 100%;
+	display: flex;
+	justify-content: "start";
+	width: 100%;
 }
 
 .main-title {
-  font-size: 24px;
-  font-weight: bold;
-  flex-shrink: 0; /* Prevents the title from shrinking */
-  margin-right: 20px; /* Space between title and description */
-  color: white; /* Title in white */
-  font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+	font-size: 24px;
+	font-weight: bold;
+	flex-shrink: 0; /* Prevents the title from shrinking */
+	margin-right: 20px; /* Space between title and description */
+	color: white; /* Title in white */
+	font-family: "Ubuntu", sans-serif; /* Ubuntu font */
 }
 
 .description {
-  font-size: 16px;
-  font-style: italic;
-  color: #E3E3E3; /* Lighter grey for subtitle */
-  text-align: right;
-  flex-grow: 1;
-  white-space: nowrap; /* Ensures the text stays in one line */
-  overflow: hidden; /* Hides text that overflows */
-  text-overflow: ellipsis; /* Adds ellipsis to overflowing text */
-  font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+	font-size: 16px;
+	font-style: italic;
+	color: #e3e3e3; /* Lighter grey for subtitle */
+	text-align: right;
+	padding-top: 10px;
+	flex-grow: 1;
+	white-space: nowrap; /* Ensures the text stays in one line */
+	overflow: hidden; /* Hides text that overflows */
+	text-overflow: ellipsis; /* Adds ellipsis to overflowing text */
+	font-family: "Ubuntu", sans-serif; /* Ubuntu font */
 }
 
 @media (max-width: 600px) {
-  .navbar-header {
-    flex-direction: column;
-    align-items: flex-start; /* Aligns items to the start on small screens */
-  }
+	.main-title {
+		font-size: 20px;
+	}
+	,
+	.description {
+	}
 
-  .main-title, .description {
-    text-align: left;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .description {
-    font-size: 14px; /* Smaller font size for smaller screens */
-    padding-top: 5px; /* Adds space between the title and description */
-  }
+	.description {
+		font-size: 14px; /* Smaller font size for smaller screens */
+		padding-top: 10px; /* Adds space between the title and description */
+	}
 }
 
 .content {
-  margin: 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	margin: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .custom-card {
-  background-color: #293742; /* Dark mode card background */
-  color: white;
-  padding: 20px;
-  font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+	background-color: #293742; /* Dark mode card background */
+	color: white;
+	padding: 20px;
+	font-family: "Ubuntu", sans-serif; /* Ubuntu font */
 }
 
 .custom-button {
-  margin-top: 10px;
-  width: 100%;
-  justify-content: left;
-  color: #FFFFFF;
-  font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+	margin-top: 10px;
+	width: 100%;
+	justify-content: left;
+	color: #ffffff;
+	font-family: "Ubuntu", sans-serif; /* Ubuntu font */
 }
 
 .email-link {
-  color: #8aabff; /* Light blue for clickable links */
+	color: #8aabff; /* Light blue for clickable links */
 }
 
 .custom-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #2B3E50; /* Dark footer */
-  color: white;
-  padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #2b3e50; /* Dark footer */
+	color: white;
+	padding: 10px 0;
 }

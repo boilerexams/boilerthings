@@ -1,9 +1,24 @@
-import React from 'react';
-import { Card, Button, Navbar, Alignment, Classes } from '@blueprintjs/core';
+import React, { useEffect } from 'react';
+import { Card, Button, Navbar, Alignment } from '@blueprintjs/core';
 import '@blueprintjs/core/lib/css/blueprint.css';
-import './App.css'; // Make sure to create this CSS file in your src directory
+import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Set page title
+    document.title = "Boilerthings.com";
+    // Set meta description
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.content = "Websites for Boilermakers, by Boilermakers";
+    }
+    // Set favicon to a black square emoji
+    const favicon = document.querySelector("link[rel='icon']");
+    if (favicon) {
+      favicon.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='black'/></svg>";
+    }
+  }, []);
+
   return (
     <div className="App">
       <Navbar className="bp3-dark custom-navbar">

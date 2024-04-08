@@ -1,0 +1,84 @@
+.custom-navbar {
+  background-color: #4267B2; /* Facebook blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Increased vertical padding */
+}
+
+.navbar-header {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  align-items: center;
+  width: 100%;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0; /* Prevents the title from shrinking */
+  margin-right: 20px; /* Space between title and description */
+}
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+  color: #E3E3E3; /* Lighter grey for subtitle */
+  text-align: right;
+  flex-grow: 1;
+  white-space: nowrap; /* Ensures the text stays in one line */
+  overflow: hidden; /* Hides text that overflows */
+  text-overflow: ellipsis; /* Adds ellipsis to overflowing text */
+}
+
+@media (max-width: 600px) {
+  .navbar-header {
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start on small screens */
+  }
+
+  .main-title, .description {
+    text-align: left;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .description {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding-top: 5px; /* Adds space between the title and description */
+  }
+}
+
+.content {
+  margin: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.custom-card {
+  background-color: #293742; /* Dark mode card background */
+  color: white;
+  padding: 20px;
+}
+
+.custom-button {
+  margin-top: 10px;
+  width: 100%;
+  justify-content: left;
+  color: #FFFFFF;
+}
+
+.email-link {
+  color: #8aabff; /* Light blue for clickable links */
+}
+
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #2B3E50; /* Dark footer */
+  color: white;
+  padding: 10px 0;
+}

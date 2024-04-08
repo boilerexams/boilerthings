@@ -81,13 +81,45 @@ function App() {
 				</Card>
 
 				<Card className="custom-card" interactive={true}>
+					<h2>Sports</h2>
+					<Button
+						className="custom-button"
+						icon="arrow-right"
+						text="AriesTickets.com"
+						onClick={() => window.open("https://ariestickets.com/", "_blank")}
+					/>
+					<Button
+						className="custom-button"
+						icon="arrow-right"
+						text="Ticket Exchange Discord"
+						onClick={() => window.open("https://discord.com/invite/PFZ44JKyRG", "_blank")}
+					/>
+				</Card>
+
+				<Card className="custom-card" interactive={true}>
+					<h2>News</h2>
+					<Button
+						className="custom-button"
+						icon="arrow-right"
+						text="PurdueExponent.org"
+						onClick={() => window.open("https://purdueexponent.org/", "_blank")}
+					/>
+					<Button
+						className="custom-button"
+						icon="arrow-right"
+						text="r/Purdue"
+						onClick={() => window.open("https://reddit.com/r/Purdue/", "_blank")}
+					/>
+				</Card>
+
+				<Card className="custom-card" interactive={true}>
 					<h2>Contact</h2>
 					<p>
 						Email{" "}
 						<a href="mailto:team@boilerbookings.com" className="email-link">
 							team@boilerbookings.com
 						</a>{" "}
-						if you'd like to put something on here and we will decide if you're
+						if you'd like to put something on here and we'll decide if you're
 						worthy enough...
 					</p>
 				</Card>
